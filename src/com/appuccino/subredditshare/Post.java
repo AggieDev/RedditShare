@@ -3,8 +3,8 @@ package com.appuccino.subredditshare;
 public class Post {
 	String title;
 	String content;
-	String url;	//link to reddit post
-	String thumbnailURL;
+	String url;	//link to actual picture
+	String thumbnailURL; //link to thumbnail of picture
 	
 	//constructors
 	public Post()

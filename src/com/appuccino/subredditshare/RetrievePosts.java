@@ -53,7 +53,7 @@ public class RetrievePosts extends AsyncTask<String, Integer, ArrayList<Post>>{
 				JSONObject current = children.getJSONObject(i).getJSONObject("data");
 				
 				Post thisPost = new Post(current.getString("title"), "submitted by " + current.getString("author")
-						, current.getString("url"), current.getString("thumbnail"));
+						, current.getString("permalink"), current.getString("thumbnail"));
 				Log.i("wbbug",current.getString("thumbnail"));
 				postList.add(thisPost);
 			}

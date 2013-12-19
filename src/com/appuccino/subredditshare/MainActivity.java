@@ -84,16 +84,21 @@ public class MainActivity extends Activity {
         TextView emailDesc = (TextView)dialogLayout.findViewById(R.id.emailDesc);
         TextView smsText = (TextView)dialogLayout.findViewById(R.id.smsText);
         TextView smsDesc = (TextView)dialogLayout.findViewById(R.id.smsDesc);
+        TextView redditText = (TextView)dialogLayout.findViewById(R.id.redditText);
+        TextView redditDesc = (TextView)dialogLayout.findViewById(R.id.redditDesc);
         LinearLayout emailButton = (LinearLayout)dialogLayout.findViewById(R.id.shareEmail);
         LinearLayout smsButton = (LinearLayout)dialogLayout.findViewById(R.id.shareSMS);
+        LinearLayout redditButton = (LinearLayout)dialogLayout.findViewById(R.id.viewPost);
         
         //set fonts
         title.setTypeface(customFont);
         subtitle.setTypeface(customFont2);
         emailDesc.setTypeface(customFont2);
         smsDesc.setTypeface(customFont2);
+        redditDesc.setTypeface(customFont2);
         emailText.setTypeface(customFont3);
         smsText.setTypeface(customFont3);
+        redditText.setTypeface(customFont3);
         
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -106,11 +111,19 @@ public class MainActivity extends Activity {
 			}
         });
         
-        //sms button clicked
+      //sms button clicked
         smsButton.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
 				sendSMS(item);
+			}
+        });
+        
+      //reddit button clicked
+        redditButton.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				viewPost(item);
 			}
         });
 	}
@@ -151,6 +164,13 @@ public class MainActivity extends Activity {
         intent.putExtra("compose_mode", true);
         startActivity(intent);
         finish();
+	}
+	
+	public void viewPost(int post)
+	{
+		String url = "http://www.reddit.com" + postList.get(post).getURL();
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+		startActivity(browserIntent);
 	}
 	
 	//handling for search query intents

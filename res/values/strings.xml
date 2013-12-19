@@ -14,5 +14,7 @@
     <string name="smstext">SMS</string>
     <string name="emaildesc">b/c your friends need more spam</string>
     <string name="smsdesc">text this post to a friend</string>
+    <string name="reddittext">View Post</string>
+    <string name="redditdesc">View on Reddit</string>
 
 </resources>

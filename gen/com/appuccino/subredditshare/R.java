@@ -32,9 +32,11 @@ public final class R {
         public static final int email_icon=0x7f020001;
         public static final int ic_launcher=0x7f020002;
         public static final int overlay=0x7f020003;
-        public static final int sample_thumbnail=0x7f020004;
-        public static final int share_gradient=0x7f020005;
-        public static final int sms_icon=0x7f020006;
+        public static final int reddit_icon=0x7f020004;
+        public static final int reddit_launcher_icon=0x7f020005;
+        public static final int sample_thumbnail=0x7f020006;
+        public static final int share_gradient=0x7f020007;
+        public static final int sms_icon=0x7f020008;
     }
     public static final class id {
         public static final int content=0x7f0a0003;
@@ -42,7 +44,9 @@ public final class R {
         public static final int emailText=0x7f0a0008;
         public static final int emailicon=0x7f0a0007;
         public static final int list=0x7f0a0000;
-        public static final int search=0x7f0a000e;
+        public static final int redditDesc=0x7f0a0010;
+        public static final int redditText=0x7f0a000f;
+        public static final int search=0x7f0a0011;
         public static final int shareEmail=0x7f0a0006;
         public static final int shareSMS=0x7f0a000a;
         public static final int shareSubtitle=0x7f0a0005;
@@ -52,6 +56,7 @@ public final class R {
         public static final int smsicon=0x7f0a000b;
         public static final int thumbnail=0x7f0a0001;
         public static final int title=0x7f0a0002;
+        public static final int viewPost=0x7f0a000e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -67,6 +72,8 @@ public final class R {
         public static final int emaildesc=0x7f07000b;
         public static final int emailtext=0x7f070009;
         public static final int hello_world=0x7f070002;
+        public static final int redditdesc=0x7f07000e;
+        public static final int reddittext=0x7f07000d;
         public static final int samplecontent=0x7f070004;
         public static final int sampletitle=0x7f070003;
         public static final int search_hint=0x7f070005;
