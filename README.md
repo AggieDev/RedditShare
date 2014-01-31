@@ -1,4 +1,4 @@
 RedditShare
 ===========
 
-Android App project for Rocksauce Studios
+Android App project made for Rocksauce Studios.
